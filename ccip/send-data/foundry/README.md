@@ -1,3 +1,4 @@
 
-### Install dependences
-```forge install --no-git  smartcontractkit/chainlink-ccip  smartcontractkit/chainlink-evm```
+### Set up
+Install Foundry dependencies:
+```forge install ```

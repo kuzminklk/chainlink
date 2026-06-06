@@ -1,0 +1,9 @@
+[submodule "ccip/send-data/foundry/lib/chainlink-ccip"]
+	path = ccip/send-data/foundry/lib/chainlink-ccip
+	url = https://github.com/smartcontractkit/chainlink-ccip
+[submodule "ccip/send-data/foundry/lib/chainlink-evm"]
+	path = ccip/send-data/foundry/lib/chainlink-evm
+	url = https://github.com/smartcontractkit/chainlink-evm
+[submodule "ccip/send-data/foundry/lib/forge-std"]
+	path = ccip/send-data/foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std

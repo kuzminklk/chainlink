@@ -6,6 +6,7 @@
 npx hardhat --init
 
 # Install dependences
+npm install 
 npm install @chainlink/contracts-ccip @chainlink/contracts viem
 npm install --save-dev @nomicfoundation/hardhat-viem @nomicfoundation/hardhat-keystore
 

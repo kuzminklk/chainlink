@@ -1,17 +1,14 @@
 
 
-
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.24;
-
 
 import { Script, console } from "forge-std/Script.sol";
 
 import { Sender } from "../src/Sender.sol";
 import { Receiver } from "../src/Receiver.sol";
-import { LinkTokenInterface } from "@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol";
-
+import { LinkTokenInterface } from "chainlink-evm/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol";
 
 
 contract SendCrossChainMessage is Script {

@@ -4,9 +4,9 @@
 
 pragma solidity 0.8.24;
 
-
 import { Script, console } from "forge-std/Script.sol";
 import { Receiver } from "../src/Receiver.sol";
+
 
 contract VerifyCrossChainMessage is Script {
 

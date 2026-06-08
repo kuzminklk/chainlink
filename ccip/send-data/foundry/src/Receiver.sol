@@ -4,8 +4,8 @@
 
 pragma solidity 0.8.24;
 
-import { CCIPReceiver } from "@chainlink/contracts-ccip/contracts/applications/CCIPReceiver.sol";
-import { Client } from "@chainlink/contracts-ccip/contracts/libraries/Client.sol";
+import { CCIPReceiver } from "chainlink-ccip/chains/evm/contracts/applications/CCIPReceiver.sol";
+import { Client } from "chainlink-ccip/chains/evm/contracts/libraries/Client.sol";
 
 
 /// @title A simple contract for receiving string data across chains.

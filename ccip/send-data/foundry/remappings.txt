@@ -1,7 +1,8 @@
+halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/
+openzeppelin-contracts/=lib/openzeppelin-contracts/
+@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
+@openzeppelin/contracts@5.3.0/=lib/openzeppelin-contracts/contracts/
 chainlink-ccip/=lib/chainlink-ccip/
-@chainlink/contracts-ccip/contracts/=lib/chainlink-ccip/chains/evm/contracts/
-chainlink-evm/=lib/chainlink-evm/contracts/
-@chainlink/contracts/=lib/chainlink-evm/contracts/
-@openzeppelin/contracts@5.0.2/utils/introspection/=lib/forge-std/src/interfaces/
-@openzeppelin/contracts@5.3.0/utils/introspection/=lib/forge-std/src/interfaces/
+chainlink-evm/=lib/chainlink-evm/
+erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/
 forge-std/=lib/forge-std/src/

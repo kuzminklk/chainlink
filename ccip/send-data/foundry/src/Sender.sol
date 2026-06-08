@@ -4,10 +4,10 @@
 
 pragma solidity 0.8.24;
 
-import { IRouterClient } from "@chainlink/contracts-ccip/contracts/interfaces/IRouterClient.sol";
-import { Client } from "@chainlink/contracts-ccip/contracts/libraries/Client.sol";
-import { OwnerIsCreator } from "@chainlink/contracts/src/v0.8/shared/access/OwnerIsCreator.sol";
-import { LinkTokenInterface } from "@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol";
+import { IRouterClient } from "chainlink-ccip/chains/evm/contracts/interfaces/IRouterClient.sol";
+import { Client } from "chainlink-ccip/chains/evm/contracts/libraries/Client.sol";
+import { OwnerIsCreator } from "chainlink-evm/contracts/src/v0.8/shared/access/OwnerIsCreator.sol";
+import { LinkTokenInterface } from "chainlink-evm/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol";
 
 
 /// @title - A simple contract for sending string data across chains

@@ -1,12 +1,9 @@
-/* 
-
-// SPDX-License-Identifier: MIT
+/* // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.24;
 
-import { TokenTransferor } from "../src/TokenTransferor.sol";
-import { Script } from "forge-std/Script.sol";
-
+import {TokenTransferor} from "../src/TokenTransferor.sol";
+import {Script} from "forge-std/Script.sol";
 
 contract FundContractWithLinkTokens is Script {
 	uint64 public constant SEPOLIA_CHAIN_SELECTOR = 16015286601757825753;
@@ -24,4 +21,5 @@ contract FundContractWithLinkTokens is Script {
 
 		return TokenTransferorContract;
 	}
-} */
+}
+ */

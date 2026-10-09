@@ -1,7 +1,4 @@
-
-
 import { network } from "hardhat"
-
 
 // Paste the Receiver contract address
 const RECEIVER_ADDRESS = "0xecc5bdf3869a86602ad76325d9d699b7430d6822"
@@ -18,10 +15,10 @@ const [messageId, text] = await receiver.read.getLastReceivedMessageDetails()
 const ZERO_BYTES32 = "0x0000000000000000000000000000000000000000000000000000000000000000"
 
 if (messageId === ZERO_BYTES32) {
-  console.log("No message received yet.")
-  console.log("Please wait a bit longer and try again.")
-  process.exit(1)
+	console.log("No message received yet.")
+	console.log("Please wait a bit longer and try again.")
+	process.exit(1)
 } else {
-  console.log(`✅ Message ID: ${messageId}`)
-  console.log(`Text: "${text}"`)
+	console.log(`✅ Message ID: ${messageId}`)
+	console.log(`Text: "${text}"`)
 }

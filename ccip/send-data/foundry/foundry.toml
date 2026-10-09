@@ -9,6 +9,10 @@ runs = 128
 depth = 128
 fail_on_revert = true
 
+[fmt]
+style = "tab"
+tab_width = 2
+
 [rpc_endpoints]
 ethereum = "${ETHEREUM_RPC_URL}"
 ethereum-sepolia = "${ETHEREUM_SEPOLIA_RPC_URL}"

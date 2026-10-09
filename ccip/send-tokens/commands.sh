@@ -1,5 +1,3 @@
-
-
 # — Scripts —
 
 # Deploy contract

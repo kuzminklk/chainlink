@@ -1,12 +1,9 @@
-
-
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.24;
 
-import { TokenTransferor } from "../src/TokenTransferor.sol";
-import { Script } from "forge-std/Script.sol";
-
+import {TokenTransferor} from "../src/TokenTransferor.sol";
+import {Script} from "forge-std/Script.sol";
 
 contract DeployTokenTransferor is Script {
 	address public constant FUJI_CCIP_ROUTER = 0xF694E193200268f9a4868e4Aa017A0118C9a8177;

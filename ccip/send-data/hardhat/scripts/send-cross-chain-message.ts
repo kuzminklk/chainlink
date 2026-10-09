@@ -24,28 +24,20 @@ console.log("\n[Step 1] Deploying Sender contract on Avalanche Fuji...")
 const sender = await fujiNetwork.viem.deployContract("Sender", [FUJI_ROUTER, FUJI_LINK])
 const fujiPublicClient = await fujiNetwork.viem.getPublicClient()
 
-console.log(
-	`Sender contract has been deployed to this address on the Fuji testnet: ${sender.address}`
-)
-console.log(
-	`View on Avascan: https://testnet.avascan.info/blockchain/all/address/${sender.address}`
-)
+console.log(`Sender contract has been deployed to this address on the Fuji testnet: ${sender.address}`)
+console.log(`View on Avascan: https://testnet.avascan.info/blockchain/all/address/${sender.address}`)
 
 // Step 2: Fund Sender with LINK
 console.log("\n[Step 2] Funding Sender with 1 LINK...")
 
 const [fujiWalletClient] = await fujiNetwork.viem.getWalletClients()
 if (!fujiWalletClient) {
-	throw new Error(
-		"No wallet client available. Check PRIVATE_KEY + network config in hardhat.config.ts."
-	)
+	throw new Error("No wallet client available. Check PRIVATE_KEY + network config in hardhat.config.ts.")
 }
 
 // We create a minimal interface for the LINK token to be able to call the transfer function.
 
-const linkTokenInterfaceAbi = parseAbi([
-	"function transfer(address to, uint256 value) returns (bool)",
-])
+const linkTokenInterfaceAbi = parseAbi(["function transfer(address to, uint256 value) returns (bool)"])
 
 const link = getContract({
 	address: FUJI_LINK,
@@ -68,13 +60,9 @@ console.log("\n[Step 3] Deploying Receiver on Ethereum Sepolia...")
 const receiver = await sepoliaNetwork.viem.deployContract("Receiver", [SEPOLIA_ROUTER])
 const sepoliaPublicClient = await sepoliaNetwork.viem.getPublicClient()
 
-console.log(
-	`Receiver contract has been deployed to this address on the Sepolia testnet: ${receiver.address}`
-)
+console.log(`Receiver contract has been deployed to this address on the Sepolia testnet: ${receiver.address}`)
 console.log(`View on Etherscan: https://sepolia.etherscan.io/address/${receiver.address}`)
-console.log(
-	`\n📋 Copy the receiver address since it will be needed to run the verification script 📋 \n`
-)
+console.log(`\n📋 Copy the receiver address since it will be needed to run the verification script 📋 \n`)
 
 // Step 4: Send cross-chain message
 console.log("\n[Step 4] Sending cross-chain message...")

@@ -11,8 +11,8 @@ Part of computer-science study curriculum available in [Notion](https://kuzminkl
 ### Technologies
 
 Development: Visual Studio Code  
-Programming language: Solidity
-Environment: Foundry, Hardhat
-Smart-contracts: Chainlink
-Oracle: Chainlink
-Formatting: “.editorconfig”, “.vscode/…”, Prettier, Foundry
+Programming language: Solidity  
+Environment: Foundry, Hardhat  
+Smart-contracts: Chainlink  
+Oracle: Chainlink  
+Formatting: “.editorconfig”, “.vscode/…”, Prettier, Foundry  
